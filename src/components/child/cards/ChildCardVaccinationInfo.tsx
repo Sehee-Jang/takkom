@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import InjectorIcon from "../../../public/child/injector-icon.svg";
-import RightArrowIcon from "../../../public/child/right-arrow-icon.svg";
+import InjectorIcon from "@public/child/injector-icon.svg";
+import RightArrowIcon from "@public/child/right-arrow-icon.svg";
 import { Child } from "@/types/childType";
 
 type ChildCardProps = {

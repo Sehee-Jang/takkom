@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import browserClient from "@/utils/supabase/client";
-import Schedule from "./Schedule";
+import Schedule from "../schedule/Schedule";
 import { useVaccineQuery, useVaccineRecordQuery } from "@/query/useVaccineRecordQuery";
 import { ToastDescription } from "@radix-ui/react-toast";
 import { useToast } from "@/hooks/use-toast";
@@ -13,7 +13,7 @@ type ChildCardProps = {
   child?: Child; // 등록된 child가 없으면 undefined일 수 있음
   onEdit?: (child: Child) => void; // 수정 기능을 위해 child를 전달
   onDelete?: (childId: string) => void;
-}
+};
 
 export const ChildCard = ({ child, onDelete }: ChildCardProps) => {
   const { toast } = useToast();

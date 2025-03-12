@@ -1,7 +1,7 @@
 "use client";
 // import Loading from "@/components/child/loading";
-import ErrorMessage from "@/components/child/error";
-import useChildrenData from "./useChildrenData";
+import ErrorMessage from "@/components/child/loading/error";
+import useChildrenData from "../useChildrenData";
 import ChildPageContent from "./ChildPageContent";
 import ChildPageLoading from "@/app/child/loading";
 

@@ -5,7 +5,7 @@ import { z } from "zod";
 import { UseFormReturn } from "react-hook-form";
 import { formSchema } from "@/app/child/register/steps/RegisterChildInfo";
 import { useRef, useState } from "react";
-import cameraIcon from "../../../public/child/camera-icon.svg";
+import cameraIcon from "@public/child/camera-icon.svg";
 import Image from "next/image";
 import { DEFAULT_PROFILE_IMAGE_URL } from "@/utils/supabase/client";
 import { DateTimePicker } from "@/components/ui/datetime-picker";

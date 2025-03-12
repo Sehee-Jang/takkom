@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { Tables } from "../../../database.types";
+import { Tables } from "../../../../database.types";
 import { calculateSchedule } from "@/api/vaccineApi";
 import browserClient from "@/utils/supabase/client";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
 import { useVaccineRecordQuery, useVaccineScheduleQuery } from "@/query/useVaccineRecordQuery";
 import ScheduleTableRow from "./ScheduleTableRow";
-import checkListIcon from "../../../public/child/checklist-icon.svg";
+import checkListIcon from "@public/child/checklist-icon.svg";
 import Image from "next/image";
 
 // 여기서 child id에 대한 vaccine record를 가져와서 vaccine id가 포함되어 있으면

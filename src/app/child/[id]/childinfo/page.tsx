@@ -1,5 +1,5 @@
 import React from "react";
-import ChildInfoPageContent from "@/components/child/ChildInfoPageContent";
+import ChildInfoPageContent from "@/components/child/info/ChildInfoPageContent";
 
 const ChildInfoEditPage = () => {
   return (

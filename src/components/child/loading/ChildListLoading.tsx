@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { ReactNode } from "react";
-import ChildLoading from "../../../public/common/search-takkomi.svg";
+import ChildLoading from "@public/common/search-takkomi.svg";
 
 const LoadingChildList = ({
   children,

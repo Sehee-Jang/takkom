@@ -4,11 +4,11 @@ import React from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useChildInfoQuery } from "@/query/useChildQuery";
 import { useUserQuery } from "@/query/useUserQuery";
-import PreIcon from "../../../public/icon/preIcon.svg";
+import PreIcon from "@public/icon/preIcon.svg";
 import Image from "next/image";
 import { useToast } from "@/hooks/use-toast";
 import { ToastDescription } from "@/components/ui/toast";
-import EditChildForm from "@/components/child/EditChildForm";
+import EditChildForm from "@/components/child/forms/EditChildForm";
 import browserClient from "@/utils/supabase/client";
 
 const ChildInfoPageContent = () => {

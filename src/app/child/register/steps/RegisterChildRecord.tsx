@@ -6,9 +6,9 @@ import browserClient from "@/utils/supabase/client";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Vaccination11 from "../../../../../public/vaccinerecord/vaccination1-1.svg";
-import Vaccination12 from "../../../../../public/vaccinerecord/vaccination1-2.svg";
-import PreIcon from "../../../../../public/icon/preIcon.svg";
+import Vaccination11 from "@public/vaccinerecord/vaccination1-1.svg";
+import Vaccination12 from "@public/vaccinerecord/vaccination1-2.svg";
+import PreIcon from "@public/icon/preIcon.svg";
 import { useToast } from "@/hooks/use-toast";
 import { ToastDescription } from "@/components/ui/toast";
 

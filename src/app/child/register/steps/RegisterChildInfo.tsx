@@ -7,10 +7,10 @@ import { useRegisterChildMutation } from "@/query/useRegisterChildMutation";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
-import RegisterChildInfoForm from "@/components/child/RegisterChildInfoForm";
-import RegisterChildInfoIcon from "../../../../../public/child/register-child-info-icon.svg";
-import RegisterChildInfoBlurredIcon from "../../../../../public/child/register-child-info-blurred-icon.svg";
-import PreIcon from "../../../../../public/icon/preIcon.svg";
+import RegisterChildInfoForm from "@/components/child/forms/RegisterChildInfoForm";
+import RegisterChildInfoIcon from "@public/child/register-child-info-icon.svg";
+import RegisterChildInfoBlurredIcon from "@public/child/register-child-info-blurred-icon.svg";
+import PreIcon from "@public/icon/preIcon.svg";
 
 interface RegisterChildInfoProps {
   onNext: (data: Partial<Child>) => void;

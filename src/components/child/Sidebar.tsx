@@ -1,6 +1,6 @@
 import React from "react";
-import ChildTapIconActive from "../../../public/child/child-icon-white.svg";
-import ChildTapIcon from "../../../public/child/child-icon-gray.svg";
+import ChildTapIconActive from "@public/child/child-icon-white.svg";
+import ChildTapIcon from "@public/child/child-icon-gray.svg";
 import { Child } from "@/types/childType";
 import Image from "next/image";
 import RegisterButton from "./RegisterButton";

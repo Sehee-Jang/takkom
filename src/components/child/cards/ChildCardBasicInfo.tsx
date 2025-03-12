@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { DEFAULT_PROFILE_IMAGE_URL } from "@/utils/supabase/client";
-import CakeIcon from "../../../public/child/cake-icon.svg";
+import CakeIcon from "@public/child/cake-icon.svg";
 import { Child } from "@/types/childType";
 
 type ChildCardProps = {

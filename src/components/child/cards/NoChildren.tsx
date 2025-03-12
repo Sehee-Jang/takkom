@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import NoChildIcon from "../../../public/child/no-child-icon.svg";
+import NoChildIcon from "@public/child/no-child-icon.svg";
 
 const NoChildren = () => {
   return (

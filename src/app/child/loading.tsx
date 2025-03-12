@@ -1,5 +1,5 @@
 import React from "react";
-import LoadingChildList from "@/components/child/ChildListLoading";
+import LoadingChildList from "@/components/child/loading/ChildListLoading";
 
 const ChildPageLoading = () => {
   return (

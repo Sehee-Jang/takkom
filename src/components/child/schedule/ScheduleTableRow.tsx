@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { TableCell, TableRow } from "@/components/ui/table";
-import selectiveIcon from "../../../public/child/selective-icon.svg";
-import essentialIcon from "../../../public/child/essential-icon.svg";
+import selectiveIcon from "@public/child/selective-icon.svg";
+import essentialIcon from "@public/child/essential-icon.svg";
 
 type SchduleTableRowParams = {
   data: { disease: string; vaccineName: string; startDate: string; endDate: string; additional: boolean };

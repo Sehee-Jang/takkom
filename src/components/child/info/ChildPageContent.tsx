@@ -1,8 +1,8 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import ChildCardList from "./ChildCardList";
+import Sidebar from "../Sidebar";
+import ChildCardList from "../cards/ChildCardList";
 import { Child } from "@/types/childType";
-import NoChildren from "./NoChildren";
+import NoChildren from "../cards/NoChildren";
 
 interface ChildPageContentProps {
   children: Child[];

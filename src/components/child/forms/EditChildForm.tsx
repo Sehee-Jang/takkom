@@ -8,8 +8,8 @@ import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRef, useState } from "react";
-import CameraIcon from "../../../public/child/camera-icon.svg";
-import DeleteIcon from "../../../public/child/delete-icon.svg";
+import CameraIcon from "@public/child/camera-icon.svg";
+import DeleteIcon from "@public/child/delete-icon.svg";
 import Image from "next/image";
 import { useUpdateChildMutation } from "@/query/useUpdateChildMutation";
 import { useDeleteProfileImageMutation } from "@/query/useChildQuery";

@@ -1,4 +1,4 @@
-import ChildPageWrap from "@/components/child/ChildPage";
+import ChildPageWrap from "@/components/child/info/ChildPage";
 
 const ChildPage = () => {
   return <ChildPageWrap />;
