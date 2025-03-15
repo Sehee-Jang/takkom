@@ -87,5 +87,3 @@ export const useChildrenQuery = (supabaseClient: SupabaseDatabase, userId?: stri
     // enabled: !!userId && !!childId
   });
 };
-
-//

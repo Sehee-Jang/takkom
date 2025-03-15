@@ -4,11 +4,13 @@ import ErrorMessage from "@/components/child/loading/error";
 import useChildrenData from "../useChildrenData";
 import ChildPageContent from "./ChildPageContent";
 import ChildPageLoading from "@/app/child/loading";
+import { useDeleteChildMutation } from "@/query/useDeleteChildMutation";
 
 const ChildPageWrap = () => {
-  const { children, setChildren, selectedChildId, setSelectedChildId, isUserLoading, isUserError, isLoading, error } =
+  const { children, selectedChildId, setSelectedChildId, isUserLoading, isUserError, isLoading, error } =
     useChildrenData();
-
+  const deleteChildMutation = useDeleteChildMutation();
+  
   // 로딩 중 또는 에러 발생 시 처리
   if (isUserLoading || isLoading) return <ChildPageLoading />;
   if (isUserError) return <ErrorMessage message="사용자 정보를 가져오는 데 오류가 발생했습니다." />;
@@ -19,8 +21,8 @@ const ChildPageWrap = () => {
   };
 
   // 아이 정보 삭제 함수
-  const handleDelete = (id: string) => {
-    setChildren((prevChildren) => prevChildren.filter((child) => child.id !== id));
+  const handleDelete = async (childId: string) => {
+    await deleteChildMutation.mutateAsync(childId);
   };
 
   return (
