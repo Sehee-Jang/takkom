@@ -1,5 +1,5 @@
 "use client";
-// import Loading from "@/components/child/loading";
+
 import ErrorMessage from "@/components/child/loading/error";
 import useChildrenData from "../useChildrenData";
 import ChildPageContent from "./ChildPageContent";
@@ -10,7 +10,7 @@ const ChildPageWrap = () => {
   const { children, selectedChildId, setSelectedChildId, isUserLoading, isUserError, isLoading, error } =
     useChildrenData();
   const deleteChildMutation = useDeleteChildMutation();
-  
+
   // 로딩 중 또는 에러 발생 시 처리
   if (isUserLoading || isLoading) return <ChildPageLoading />;
   if (isUserError) return <ErrorMessage message="사용자 정보를 가져오는 데 오류가 발생했습니다." />;

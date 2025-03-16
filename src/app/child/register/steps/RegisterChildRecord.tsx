@@ -6,9 +6,9 @@ import browserClient from "@/utils/supabase/client";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import StepNavigation from "@/components/child/common/StepNavigation";
 import Vaccination11 from "@public/vaccinerecord/vaccination1-1.svg";
 import Vaccination12 from "@public/vaccinerecord/vaccination1-2.svg";
-import PreIcon from "@public/icon/preIcon.svg";
 import { useToast } from "@/hooks/use-toast";
 import { ToastDescription } from "@/components/ui/toast";
 
@@ -53,17 +53,7 @@ const RegisterChildRecord = ({ child, onPrev, onComplete }: RegisterChildRecordP
   return (
     <div className="container flex flex-col mx-auto justify-center max-w-[792px] mt-16 max-sm:mt-3 max-sm:px-6 max-sm:pb-[132px] max-sm:mb-0">
       {/* 모바일에서 보이는 레이아웃 */}
-      <div className="w-full px-6 py-2 flex items-center gap-6 mb-4 sm:hidden">
-        <div className="relative">
-          {/* 이전 버튼 */}
-          <button onClick={() => router.back()}>
-            <Image src={PreIcon} alt="이전" />
-          </button>
-        </div>
-        <div className="flex-1 text-center" style={{ transform: "translateX(-24px)" }}>
-          <p className="text-base font-bold text-[#303030]">아이 등록하기</p>
-        </div>
-      </div>
+      <StepNavigation title="아이 등록하기" />
 
       <div className="relative mb-10 max-sm:mb-5">
         <Image src={Vaccination11} alt="백신 아이콘" className="w-20 h-20 object-cover max-sm:w-14 max-sm:h-14" />
